@@ -17,6 +17,8 @@ SENTRY_WEB_OPTIONS = {
     'worker_class': 'gevent'
 }
 
+SENTRY_ALLOW_REGISTRATION = False
+
 for env_key, env_value in os.environ.iteritems():
     if env_key.startswith('SENTRY_'):
         globals()[env_key] = env_value
