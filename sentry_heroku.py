@@ -10,6 +10,8 @@ DATABASES = {
 
 SENTRY_KEY = str(DATABASES['default'])
 
+SENTRY_URL_PREFIX = 'http://sentry.tracy.com.br'
+
 SENTRY_WEB_HOST = '0.0.0.0'
 SENTRY_WEB_PORT = os.environ['PORT']
 SENTRY_WEB_OPTIONS = {
