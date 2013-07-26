@@ -19,6 +19,8 @@ SENTRY_WEB_OPTIONS = {
 
 SENTRY_ALLOW_REGISTRATION = False
 
+
+DEFAULT_FROM_EMAIL = 'Tracy Logging Service <noreply@tracy.com.br>'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'sendmail@tracy.com.br'
