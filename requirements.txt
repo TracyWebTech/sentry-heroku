@@ -1,4 +1,4 @@
-sentry
+sentry==6.0
 psycopg2
 gevent
 dj-database-url
