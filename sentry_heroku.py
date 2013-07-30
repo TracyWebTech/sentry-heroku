@@ -21,6 +21,10 @@ SENTRY_WEB_OPTIONS = {
 
 SENTRY_ALLOW_REGISTRATION = False
 
+SOCIAL_AUTH_CREATE_USERS = False
+
+GITHUB_APP_ID = os.environ.get('GITHUB_APP_ID', '')
+GITHUB_API_SECRET = os.environ.get('GITHUB_API_SECRET', '')
 
 DEFAULT_FROM_EMAIL = 'Tracy Logging Service <noreply@tracy.com.br>'
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
