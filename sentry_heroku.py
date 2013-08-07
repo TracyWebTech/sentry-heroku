@@ -34,6 +34,11 @@ EMAIL_HOST_USER = 'sendmail@tracy.com.br'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
 EMAIL_PORT = 587
 
+ALLOWED_HOSTS = {
+    'sentry.tracy.com.br',
+    'sentry-tracy.herokuapp.com',
+}
+
 for env_key, env_value in os.environ.iteritems():
     if env_key.startswith('SENTRY_'):
         globals()[env_key] = env_value
