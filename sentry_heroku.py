@@ -3,6 +3,9 @@ import os
 import dj_database_url
 from sentry.conf.server import *
 
+DEBUG = False
+TEMPLATE_DEBUG = False
+
 
 DATABASES = {
     'default': dj_database_url.config(default='postgres://localhost')
